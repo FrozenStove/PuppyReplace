@@ -22,6 +22,11 @@
      },
      "permissions" : [
         "storage"
-     ]
+     ],
+     "icons" : {
+        "16" : "assests/puppy-16.png",
+        "64" : "assests/puppy-64.png",
+        "128" : "assests/puppy-128.png" 
+     }
 
 }
