@@ -191,3 +191,17 @@ function replaceDog(dogObj) {
     }
 
 }
+
+
+/*
+
+1. breaking hyperlinks
+2. breaking image links
+
+3. storing options data
+
+4. bootstrap security problems
+
+5. manifest options (popup action)
+
+*/
