@@ -10,12 +10,6 @@
         }
     ],
 
-    "sidebar_action": {
-        "default_title": "My sidebar",
-        "default_panel": "index.html",
-        "open_at_install":true
-    },
-
     "options_ui": {
         "open_in_tab": true,
         "page": "index.html"
