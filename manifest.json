@@ -5,13 +5,20 @@
     "description" : "This will replace all text instances of a dog with a small picture of a puppy",
     "content_scripts" : [
         {
-            "matches" : ["https://en.wikipedia.org"],
+            "matches" : ["https://en.wikipedia.org/*"],
             "js" : ["./main.js"]
         }
-    ]
+    ],
+
+    "sidebar_action": {
+        "default_title": "My sidebar",
+        "default_panel": "index.html",
+        "open_at_install":true
+    },
+
+    "options_ui": {
+        "open_in_tab": true,
+        "page": "index.html"
+     }
 
 }
-
-
-
-
