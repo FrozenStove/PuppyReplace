@@ -1,26 +1,37 @@
 {
-    "manifest_version" : 3,
-    "name" : "Puppy Replace",
-    "version" : "1.0",
-    "description" : "This will replace all text instances of a dog with a small picture of a puppy",
-    "content_scripts" : [
+    "manifest_version": 3,
+    "name": "Puppy Replace",
+    "version": "1.0",
+    "description": "This will replace all text instances of a dog with a small picture of a puppy",
+    "content_scripts": [
         {
-            "matches" : ["https://en.wikipedia.org/*"],
-            "js" : ["./main.js"]
+            "matches": [
+                "https://en.wikipedia.org/*"
+            ],
+            "js": [
+                "./main.js"
+            ]
         }
     ],
-
     "options_ui": {
         "open_in_tab": true,
         "page": "index.html"
-     },
-     "permissions" : [
+    },
+    "permissions": [
         "storage"
-     ],
-     "icons" : {
-        "16" : "assests/puppy-16.png",
-        "64" : "assests/puppy-64.png",
-        "128" : "assests/puppy-128.png" 
-     }
+    ],
+    "icons": {
+        "16": "assests/puppy-16.png",
+        "64": "assests/puppy-64.png",
+        "128": "assests/puppy-128.png"
+    },
 
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": {
+            "16": "assests/puppy-16.png",
+            "64": "assests/puppy-64.png",
+            "128": "assests/puppy-128.png"
+        }
+    }
 }
