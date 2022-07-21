@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const bird1 = document.querySelector('.bird1');
     const bird2 = document.querySelector('.bird2');
     const bird3 = document.querySelector('.bird3');
+    const bird4 = document.querySelector('.bird4');
 
 
     dog1.addEventListener('click', ReplaceDog1);
@@ -100,6 +101,15 @@ document.addEventListener('DOMContentLoaded', () => {
             keyPhrase2: "Bird"
         });
         console.log("Bird3")
+    })
+
+    bird4.addEventListener('click', () => {
+        chrome.storage.sync.set({
+            dogNum: 8,
+            keyPhrase1: "uniQuE PhrAsE",
+            keyPhrase2: "uNiQQE"
+        });
+        console.log("OFF")
     })
 
 })
